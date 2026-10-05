@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESUPUESTO- WORLD PETS-Tienda Online</title>
+    <meta name="description" content="Tienda online de productos y servicios para mascotas. Ofrecemos alimentos premium, peluquería, autolavado y mucho más para el bienestar de tus animales.">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <script src="./../js/carrito.js" defer></script>
+    <script src="./../js/formulario.js" defer></script>
+    <script src="./../js/navbar.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+                                 <!--HEADER-->
+
+
+    <header>
+                  <img src = "./../assets/image-logo.webp" alt="perro y gato" class="logo" width="1024"  height="1024">
+                   <div class="titulo-nav">
+                      <h1>WORLD PETS </h1>  
+                   </div>
+                    
+            
+                
+
+                   <nav id="navbar" class="navbar">
+                        <div class="navbar-links"> </div>  
+                   </nav>
+
+
+                     <div class="buscador">
+                                <input type="text" class="buscar" id="buscar" placeholder="COMO LLEGAR" readonly>
+                                 <img src="./../assets/iconomaps.svg" class="lupa" alt="icono maps">
+                              
+                     </div> 
+     </header>
+
+
+
+
+
+     <main>
+
+                                 <!--FORMULARIO-->
+
+         
+
+       <div class="seccion" id="contenido-presupuesto">
+   
+                    <h2 class="titulo-formulario">FORMULARIO DE SOLICITUD</h2>
+
+           <div class="bloque">
+
+                 <form class="form" id="form" method="get" action="#" autocomplete="off">
+                      <fieldset>
+                           <legend>Datos de contacto</legend>
+
+                    
+                            <div class="campos">
+                               <label for ="nombre">Nombre <span class="requerido" >*</span>  </label>
+                               <input type = "text" id ="nombre" name ="nombre" placeholder="solo letras y maximo 15 caracteres">
+                               <span class="error" id="nombreError"></span>
+                            </div>
+
+                           <div class="campos">
+                              <label for="apellidos">Apellidos <span class="requerido">*</span>  </label>
+                              <input type="text" id="apellidos" name="apellidos" placeholder="solo letras y maximos 40 caracteres" required>
+                              <span class="error" id="apellidosError"></span>
+                             </div>
+
+
+                          <div class="campos">
+                             <label for="telefono">Telefono <span class="requerido">*</span> </label>
+                             <input type="tel" id="telefono" name="telefono" placeholder="600000000"> 
+                             <span class="error" id="telefonoError"></span>
+                          </div> 
+
+                          <div class="campos">
+                            <label for="email">Email <span class="requerido">*</span>  </label>
+                            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                            <span class="error" id="emailError"></span>
+                          </div>
+
+
+                       </fieldset>
+
+
+
+                                       <!--PRESUPUESTO-->
+
+
+
+                      <fieldset>
+                                   <legend>Presupuesto</legend>
+
+                                  <div class="campos">
+                                         <div class="presup">
+                                            <label for="seleccion-producto">Selecciona un producto</label>
+                                            <select name="seleccion-producto" id="seleccion-producto">
+                                                <option value="">--Elige un producto-- </option>
+                                                <option value="info">Solicitud de informacion</option>
+                                                <option value="Pienso 2kg:2">Pienso de 2kg-2€</option>
+                                                <option value="Pienso 5kg:5">Pienso de 5kg-5€</option>
+                                                <option value="Pienso 10kg:10">Pienso de 10kg-10€</option>
+                                            </select>
+
+                                            <span class="error" id="producto-error"></span>
+                                         </div>
+                                   </div>
+
+            
+
+                                   <button type="button" id="añadir-al-carrito" class="añadir-al-carrito"> Añadir al carrito</button>
+
+
+                                   <div class="campos">
+
+                                        <div class="carrito" id="contenedor-carrito">
+
+                                           <label>Carrito</label>
+
+                                            <div class="carrito-contenedor">
+                                                 <div class="campo-carrito" id="articulos-carrito"></div>
+                                                    <img class="basket" src="./../assets/cesta.svg" alt="cesta de compra" width="30" height="30">
+                                             </div>
+
+
+                    
+
+                                        </div>
+                                   </div>
+
+
+
+
+                                  <div class="campos">
+                                          <label for="number">Plazo en dias</label>
+            
+                                              <input type="number" id="number" min="0" max="30" step="5" value="30">
+                                              <p id="descuento-aplicado">Descuento aplicado: 20%</p>
+                                  </div> 
+        
+
+                   
+
+                                   <div class="campos">
+                                          <div class="extras">
+                                               <label>Extras</label>
+
+                                                  <label>
+                                                      <input type="checkbox" class="checkbox-extra"  value="envio normal:2">
+                                                       ENVIO NORMAL 2€
+                                                  </label>
+
+                                                 <label>
+                                                    <input type="checkbox" class="checkbox-extra"  value="tarjeta regalo:5">
+                                                      TARJETA REGALO 5€
+                                                 </label>
+
+                                                 <label>
+                                                   <input type="checkbox" class="checkbox-extra"  value="entrega rapida:10">
+                                                     ENTREGA RAPIDA 10€
+                                                 </label>
+                                           </div>
+                                     </div>
+
+                                    <div class="campos">
+                                      <p class="total" id="total-final">TOTAL FINAL:0€</p>
+                                    </div>
+                      </fieldset> 
+
+
+
+  
+
+
+
+                       <fieldset>
+                             <legend>Aceptacion y condiciones de envio</legend>
+
+                             <div class="campos">
+                               <div class="opcion">
+                                  <input type="checkbox" name="privacidad" id="privacidad" value="aceptada">
+                                  <label for="privacidad"> He leido y acepto la politica de privacidad</label>
+                                  <span class="error" id="privacidad-error"></span>
+                              </div>
+                            </div>
+                       </fieldset>
+
+
+                          <div class="campos botones">
+                               <button type="submit" class="btns btns-primario">Enviar mensaje</button>
+                               <button type="reset" class="btns btns-reset">Limpiar</button>
+                          </div>
+
+               </form>
+
+
+
+            </div>   
+      </div>
+
+ 
+    </main>
+
+
+
+
+
+
+
+                                      <!--FOOTER-->
+
+
+
+    <footer>
+
+     <div class="contenedor5">
+
+            <div class="text-pie">
+                    <ul class="foot1">
+                        <li>Contacta con nosotros</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Devoluciones</li>
+                        <li>Sistema de informacion</li>
+                        <li>Terminos especiales</li>
+                    </ul>
+                    <ul class="foot2">
+                        <li>Informacion de la compañia</li>
+                        <li>Aviso de privacidad</li>
+                        <li>Aviso sobre cookies</li>
+                        <li>Terminos de uso</li>
+                        <li>Conoce nuestras politicas</li>
+                    </ul> 
+           </div>
+
+           <div class="contenedor-iconos">
+                  <div class="iconos">
+                    <a href="https://web.whatsapp.com" target="_blank">
+                      <img src="./../assets/icono-whatssap.svg" class="icono" alt="icono whatsapp" width="50" height="50"></a>
+                  </div>
+
+                  <div class="iconos">
+                    <a href="https://www.linkedin.com" target ="_blank">
+                      <img src="./../assets/linkedin-svgrepo-com.svg" class="icono" alt="icono linkedin" width="50" height="50"></a> 
+                  </div>
+
+
+                  <div class="iconos">
+                    <a href="https://www.instagram.com" target="_blank">
+                      <img src="./../assets/instagram-1-svgrepo-com.svg" class="icono" alt="icono instagram" width="50" height="50"></a>   
+                  </div>
+
+
+                  
+
+                 <div class="tel-mail">
+                     <div class="telef">
+                        <img src="./../assets/telefono.svg" alt="icono telefono" width="30" height="30">
+                        <p>684712555</p>
+                     </div> 
+
+                     <div class="email">
+                       <img src="./../assets/email.svg" alt="icono email" width="30" height="30">
+                       <p>worldpets@gmail.com</p>
+                     </div>
+                 </div>     
+            </div> 
+            
+      </div> 
+            
+            <p class="pie"> 2026@.Todos los derechos reservados.</p>      
+        
+                
+    </footer>
+
+</body>
+</html>

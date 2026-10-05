@@ -1,0 +1,50 @@
+
+
+{
+    "navItems": [
+        {
+            "title": "PRESENTACION",
+            "href": "index.html"
+        },
+        {
+            "title": "GALERIA",
+            "href": "./views/galeria.html"
+        },
+        {
+            "title": "PRESUPUESTO",
+            "href": "./views/presupuesto.html"
+        },
+        {
+            "title": "CONTACTO",
+            "href": "./views/contacto.html"
+        }
+    ],
+
+    "presentacion": [
+    {
+        "titulo": "MEDICOS VETERINARIOS PROFESIONALES",
+        "imagenes": [
+            "./assets/medico-veterinario-1.webp",
+            "./assets/imagen.webp"
+        ],
+        "descripcion": "La atencion preventiva regular es esencial para mantener a su mascota en un estado de salud optimo. Nuestros chequeos integrales evaluan todos los aspectos del bienestar animal, desde la condicion fisica hasta el comportamiento habitual. Ademas contamo con especialistas  que cuidan de nuestros amigos."
+    },
+    
+    {
+        "titulo": "ALIMENTACION Y NUTRICION",
+        "imagenes": [
+            "./assets/marca2.webp",
+            "./assets/pienso5.webp"
+        ],
+        "descripcion": "Una alimentacion adecuada es fundamental para mantener la salud y el bienestar de nuestras mascotas. Ofrecemos diferentes opciones de alimentacion y productos pensados para las necesidades de cada animal."
+    },
+    {
+        "titulo": "ACCESORIOS PARA EL BIENESTAR",
+        "imagenes": [
+            "./assets/accesorios-mascotas-2.webp",
+            "./assets/casa-perros-2.webp"
+        ],
+        "descripcion": "Disponemos de accesorios pensados para hacer mas comoda y agradable la vida diaria de nuestras mascotas, desde elementos para su alimentacion hasta productos para su cuidado y bienestar."
+    }
+]
+}
